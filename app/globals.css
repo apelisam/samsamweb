@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0b0f1a;
+  --bg-panel: #111a2e;
+  --bg-panel-raised: #16213a;
+  --text-primary: #e8ecf1;
+  --text-secondary: #93a0b8;
+  --text-muted: #5b6579;
+  --accent-cyan: #5eead4;
+  --accent-amber: #f0a868;
+  --border: rgba(232, 236, 241, 0.1);
+  --border-strong: rgba(232, 236, 241, 0.2);
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent-cyan);
+  color: #0b0f1a;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.scanline-overlay {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(94, 234, 212, 0.03) 0px,
+    rgba(94, 234, 212, 0.03) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  mix-blend-mode: overlay;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 2px;
+}
