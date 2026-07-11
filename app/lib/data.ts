@@ -3,7 +3,7 @@
 
 export const profile = {
   name: "Apeli Samwel",
-  role: "NOC Engineer — Unity Contract & Live-Ops Support",
+  role: "Production Support Engineer — Unity Contract & Live-Ops Support",
   tagline:
     "I triage production incidents for a living. Bugs in your game don't stand a chance either — available for freelance Unity fixes, QA, and live-ops support.",
   location: "Nairobi, Kenya",
@@ -13,7 +13,7 @@ export const profile = {
   githubUrl: "https://github.com/your-username", // update with your actual GitHub
   linkedinUrl: "https://linkedin.com/in/your-username", // update with your actual LinkedIn
   resumePdf: "/resume.pdf",
-  avatarUrl: "/avatar.jpg", // drop a headshot into /public with this filename
+  avatarUrl: "/avatar.png", // drop a headshot into /public with this filename
   availability: "Open to freelance & contract work — not seeking full-time",
 };
 
